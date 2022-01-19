@@ -1,0 +1,9 @@
+body {
+    max-width: 1280px;
+    background: radial-gradient(circle at 100%, #FFFAD0,#FFF6B2, #FFF7BE);
+}
+
+#wrapper {
+    max-width: 1280px;
+    
+}
