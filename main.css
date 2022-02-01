@@ -17,11 +17,16 @@ body {
     background: radial-gradient(circle at 100%, #FFFAD0,#FFF6B2, #FFF7BE);
 }
 
-.middle img {
-    border-radius: 50%;
-}
-
 #wrapper {
     max-width: 1280px;
     
+}
+
+.signs1 {
+    display: grid;
+    grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem;
+    grid-template-rows: 12.5rem 12.5rem 12.5rem;
+    grid-template-areas:
+    'paul jess schmidt cece winston sam';
+
 }
