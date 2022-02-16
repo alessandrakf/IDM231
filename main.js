@@ -11,6 +11,8 @@ const scorpioBtn = document.getElementById('Scorpio')
 const sagittariusBtn = document.getElementById('Sagittarius')
 const capricornBtn = document.getElementById('Capricorn')
 
+console.log('hello world');
+
 aquariusBtn.addEventListener('click', function() {
     userPicked('Aquarius');
     console.log('You are an Aquarius.');
@@ -73,14 +75,12 @@ capricornBtn.addEventListener('click', function() {
 
 function userPicked(buttonName) {
     console.log('User picked ' + buttonName);
-}
-
-switch (buttonName) {
-    case 'Aquarius':
-        console.log('Aquarius was clicked');
-        // displayObj.classList.add('visible');
-    break;
-    case ''
+    switch (buttonName) {
+      case 'Aquarius':
+          console.log('Aquarius was clicked');
+          // displayObj.classList.add('visible');
+      break;
+  }
 }
 
 // add Event Listener
