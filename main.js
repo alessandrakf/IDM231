@@ -10,6 +10,7 @@ const libraBtn = document.getElementById('Libra')
 const scorpioBtn = document.getElementById('Scorpio')
 const sagittariusBtn = document.getElementById('Sagittarius')
 const capricornBtn = document.getElementById('Capricorn')
+const userSubmitBtn = document.getElementById('userSubmitBtn')
 
 console.log('hello world');
 
@@ -75,10 +76,52 @@ capricornBtn.addEventListener('click', function() {
 
 function userPicked(buttonName) {
     console.log('User picked ' + buttonName);
+    const zZodiac = document.getElementById('zZodiac');
+    const zImage = document.getElementById('zImage');
+    const zDescription = document.getElementById('zDescription')
+
     switch (buttonName) {
       case 'Aquarius':
           console.log('Aquarius was clicked');
-          // displayObj.classList.add('visible');
+          // speakers.src =`sounds/paul.mp3`;
+          // speakers.play();
+          zImage.src = 'images/paul.png';
+          zZodiac.innerHTML = "You are an Aquarius";
+          zDescription.innerHTML = "Description";
+          modal.hidden = !modal.hidden;
+      break;
+      case 'Pisces':
+          console.log('Pisces was clicked');
+      break;
+      case 'Aries':
+          console.log('Aries was clicked');
+      break;
+      case 'Taurus':
+          console.log('Taurus was clicked');
+      break;
+      case 'Gemini':
+          console.log('Gemini was clicked');
+      break;
+      case 'Cancer':
+          console.log('Cancer was clicked');
+      break;
+      case 'Leo':
+          console.log('Leo was clicked');
+      break;
+      case 'Virgo':
+          console.log('Virgo was clicked');
+      break;
+      case 'Libra':
+          console.log('Libra was clicked');
+      break;
+      case 'Scorpio':
+          console.log('Scorpio was clicked');
+      break;
+      case 'Sagittarius':
+          console.log('Sagittarius was clicked');
+      break;
+      case 'Capricorn':
+          console.log('Capricorn was clicked');
       break;
   }
 }
@@ -93,9 +136,9 @@ userSubmitBtn.addEventListener('click', function(){
     whichMonth++;
     console.log(`Users month is: ${whichMonth}`);
 
-    const WhichDayOfMonth = userBday.getUTCDate();
-    console.log(`Users birth day is: ${whichDayOfMonth}`)
-});
+    const whichDayOfMonth = userBday.getUTCDate();
+    console.log(`Users birth day is: ${whichDayOfMonth}`);
+
 
     // Zodiac Algorithm
     if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
@@ -126,5 +169,21 @@ userSubmitBtn.addEventListener('click', function(){
 
       console.log(AstroSign);
       userPicked(AstroSign);
-  
-    
+  });
+
+// Modal Functionality
+
+const modalCloseBtn = document.getElementById('btn-modal-close');
+const modal = document.getElementById('modal');
+
+modalCloseBtn.addEventListener('click', function() {
+  console.log('modal close clicked');
+  modal.hidden = !modal.hidden;
+},
+false
+);
+
+//const btnModal = document.querySelectorAll('.toggle-modal');
+//btnModal.modal.forEach(button => {
+//  button.addEventListener
+//});
