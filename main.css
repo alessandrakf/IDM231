@@ -34,6 +34,7 @@ h1 {
 h2 {
     font-family: 'Fira';
     font-size: 2rem;
+    color: #016BD0;
 }
 
 h3 {
@@ -43,7 +44,8 @@ h3 {
 
 p {
     font-family: 'Roboto';
-    font-size: 1rem
+    font-size: 1rem;
+    color: black;
 }
 
 header {
@@ -107,7 +109,8 @@ body {
 }
 
 .formDesc {
-    padding-bottom: 10px;
+    padding-bottom: 1.5rem;
+    color: black;
 }
 
 input[type=date] {
@@ -129,7 +132,7 @@ input[type=submit] {
     padding: .8rem;
     border: none;
     background-color: #016BD0;
-    color: white;
+    color: #FFF6B2;
     font-family: 'Roboto-Condensed';
     font-weight: 800;
     letter-spacing: .5px;
@@ -217,4 +220,29 @@ input[type=submit]:hover {
 #zDescription {
     line-height: 1.5rem;
     padding-bottom: 2rem;
+}
+
+.helpBtn {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 1rem;
+    border: none;
+    background-color: #016BD0;
+    color: #FFF6B2;
+    font-family: 'Roboto-Condensed';
+    font-weight: 800;
+    letter-spacing: .5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+   
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    text-align: center;
+}
+
+.helpBtn:hover {
+    background-color: #65B4FF;
 }

@@ -96,7 +96,7 @@ function userPicked(buttonName) {
           // speakers.play();
           zImage.src = 'images/jess.png';
           zZodiac.innerHTML = "You are Jess!";
-          zDescription.innerHTML = "As the sensitive and intuitive sign, your characteristics align perfectly with Jess. She is kindhearted and wants the best for everyone around her, even if she at times is taken for granted. Your sole mission in life is to help those who are less fortunate and your warmheart4ed nature makes you stand out. Your ability to place yourself in anyone’s shoes is one of the things people cherish the most about you.";
+          zDescription.innerHTML = "As the sensitive and intuitive sign, your characteristics align perfectly with Jess. She is kindhearted and wants the best for everyone around her, even if she at times is taken for granted. Your sole mission in life is to help those who are less fortunate and your warmhearted nature makes you stand out. Your ability to place yourself in anyone’s shoes is one of the things people cherish the most about you.";
           modal.hidden = !modal.hidden;
       break;
       case 'Aries':
@@ -190,8 +190,6 @@ function userPicked(buttonName) {
       break;
   }
 }
-
-
 
 // Modal Functionality
 
