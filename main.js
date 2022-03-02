@@ -1,16 +1,16 @@
-const aquariusBtn = document.getElementById('Aquarius')
-const piscesBtn = document.getElementById('Pisces')
-const ariesBtn = document.getElementById('Aries')
-const taurusBtn = document.getElementById('Taurus')
-const geminiBtn = document.getElementById('Gemini')
-const cancerBtn = document.getElementById('Cancer')
-const leoBtn = document.getElementById('Leo')
-const virgoBtn = document.getElementById('Virgo')
-const libraBtn = document.getElementById('Libra')
-const scorpioBtn = document.getElementById('Scorpio')
-const sagittariusBtn = document.getElementById('Sagittarius')
-const capricornBtn = document.getElementById('Capricorn')
-const userSubmitBtn = document.getElementById('userSubmitBtn')
+const aquariusBtn = document.getElementById('Aquarius');
+const piscesBtn = document.getElementById('Pisces');
+const ariesBtn = document.getElementById('Aries');
+const taurusBtn = document.getElementById('Taurus');
+const geminiBtn = document.getElementById('Gemini');
+const cancerBtn = document.getElementById('Cancer');
+const leoBtn = document.getElementById('Leo');
+const virgoBtn = document.getElementById('Virgo');
+const libraBtn = document.getElementById('Libra');
+const scorpioBtn = document.getElementById('Scorpio');
+const sagittariusBtn = document.getElementById('Sagittarius');
+const capricornBtn = document.getElementById('Capricorn');
+const userSubmitBtn = document.getElementById('userSubmit');
 
 console.log('hello world');
 
@@ -78,7 +78,7 @@ function userPicked(buttonName) {
     console.log('User picked ' + buttonName);
     const zZodiac = document.getElementById('zZodiac');
     const zImage = document.getElementById('zImage');
-    const zDescription = document.getElementById('zDescription')
+    const zDescription = document.getElementById('zDescription');
 
     switch (buttonName) {
       case 'Aquarius':
@@ -203,7 +203,54 @@ modalCloseBtn.addEventListener('click', function() {
 false
 );
 
-//const btnModal = document.querySelectorAll('.toggle-modal');
-//btnModal.modal.forEach(button => {
-//  button.addEventListener
-//});
+// const btnModal = document.querySelectorAll('.toggle-modal');
+// btnModal.modal.forEach(button => {
+//   button.addEventListener
+// });
+
+userSubmitBtn.addEventListener('click', function() {
+    console.log('Submit button clicked!');
+
+
+    const userBday = new Date(document.getElementById('birthdayInput').value);
+    //console.log(userBday);
+
+    const whichMonth = userBday.getUTCMonth() + 1;
+    //console.log(`Users month is: ${whichMonth}`);
+
+    const whichDayOfMonth = userBday.getUTCDate();
+    //console.log(`Users birth day is: ${whichDayOfMonth}`);
+
+
+if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+    AstroSign = "Capricorn";
+  } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+    AstroSign = "Sagittarius";
+  } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+    AstroSign = "Scorpio";
+  } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
+    AstroSign = "Libra";
+  } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
+    AstroSign = "Virgo";
+  } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+    AstroSign = "Leo";
+  } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+    AstroSign = "Cancer";
+  } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
+    AstroSign = "Gemini";
+  } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
+    AstroSign = "Taurus";
+  } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
+    AstroSign = "Aries";
+  } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
+    AstroSign = "Pisces";
+  } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
+    AstroSign = "Aquarius";
+  }
+  
+    console.log(AstroSign);
+    userPicked(AstroSign);
+
+});
+
+
