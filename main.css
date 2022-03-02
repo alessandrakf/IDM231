@@ -125,7 +125,7 @@ input[type=date]:hover {
     cursor: pointer;
 }
 
-input[type=submit] {
+#userSubmit {
     margin-top: 10px;
     appearance: none;
     -webkit-appearance: none;
@@ -141,7 +141,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+#userSubmit:hover {
     background-color: #65B4FF;
 }
 
