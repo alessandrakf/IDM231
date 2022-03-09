@@ -11,8 +11,7 @@ const scorpioBtn = document.getElementById('Scorpio');
 const sagittariusBtn = document.getElementById('Sagittarius');
 const capricornBtn = document.getElementById('Capricorn');
 const userSubmitBtn = document.getElementById('userSubmit');
-
-console.log('hello world');
+const helpBtn = document.getElementById('helpBtn');
 
 aquariusBtn.addEventListener('click', function() {
     userPicked('Aquarius');
@@ -79,6 +78,7 @@ function userPicked(buttonName) {
     const zZodiac = document.getElementById('zZodiac');
     const zImage = document.getElementById('zImage');
     const zDescription = document.getElementById('zDescription');
+    const zDescriptionHelp = document.getElementById('zDescription-help');
 
     switch (buttonName) {
       case 'Aquarius':
@@ -88,6 +88,7 @@ function userPicked(buttonName) {
           zImage.src = 'images/paul.png';
           zZodiac.innerHTML = "You are Paul!";
           zDescription.innerHTML = "Quirky and unconventional, Paul’s persona aligns perfectly with your Aquarian nature. You are not afraid to be your authentic self, and those around you cherish you for that. You love connecting with people who share similar thoughts and opinions as you.";
+          console.log('hello');
           modal.hidden = !modal.hidden;
       break;
       case 'Pisces':
@@ -181,15 +182,22 @@ function userPicked(buttonName) {
           modal.hidden = !modal.hidden;
       break;
       case 'Capricorn':
-          console.log('Capricorn was clicked');// speakers.src =`sounds/paul.mp3`;
+          console.log('Capricorn was clicked');
+          // speakers.src =`sounds/paul.mp3`;
           // speakers.play();
           zImage.src = 'images/coach.png';
           zZodiac.innerHTML = "You are Coach!";
           zDescription.innerHTML = "As the firm roommate, Coach prioritizes work and resourcefulness over everything. Like you, he is motivated by success and he is at his best when working towards a goal. Since you are always striving for greatness, it is important to remember to let loose and have some fun every once in a while. Work hard, play hard.";
           modal.hidden = !modal.hidden;
       break;
+      case 'helpBtn':
+        console.log('Help button was clicked');
+        zDescriptionHelp.innerHTML = "Enter your birth date and click SUBMIT to find out which character from the TV series New Girl you are most like. You may also click on any character's face to read their description.";
+        modalHelp.hidden = !modalHelp.hidden;
+      break;
   }
 }
+
 
 // Modal Functionality
 
@@ -202,6 +210,36 @@ modalCloseBtn.addEventListener('click', function() {
 },
 false
 );
+
+// Help Modal Functionality
+
+helpBtn.addEventListener('click', function() {
+  userPicked('helpBtn');
+  console.log('Help button was clicked.');
+});
+
+const modalCloseBtnHelp = document.getElementById('btn-modal-close-help');
+const modalHelp = document.getElementById('modal-help');
+
+modalCloseBtnHelp.addEventListener('click', function() {
+  console.log('Help close clicked');
+  modalHelp.hidden = !modalHelp.hidden;
+},
+false
+);
+
+// function userPicked(helpBtn) {
+//   console.log('User picked ' + helpBtn);
+//   const zDescriptionHelp = document.getElementById('zDescription-help');
+
+//   switch (helpBtn) {
+//     case 'helpBtn':
+//         console.log('Help button was clicked');
+//         zDescriptionHelp.innerHTML = "Enter your birthday to find out which character from the TV series New Girl you are most like. You may also click on any character to read their description.";
+//         modalHelp.hidden = !modalHelp.hidden;
+//     break; }
+//   }
+
 
 // const btnModal = document.querySelectorAll('.toggle-modal');
 // btnModal.modal.forEach(button => {
