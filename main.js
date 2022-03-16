@@ -83,8 +83,8 @@ function userPicked(buttonName) {
     switch (buttonName) {
       case 'Aquarius':
           console.log('Aquarius was clicked');
-          // speakers.src =`sounds/paul.mp3`;
-          // speakers.play();
+          speakers.src =`paul.mp3`;
+          speakers.play();
           zImage.src = 'images/paul.png';
           zZodiac.innerHTML = "You are Paul!";
           zDescription.innerHTML = "Quirky and unconventional, Paul’s persona aligns perfectly with your Aquarian nature. You are not afraid to be your authentic self, and those around you cherish you for that. You love connecting with people who share similar thoughts and opinions as you.";
@@ -93,7 +93,7 @@ function userPicked(buttonName) {
       break;
       case 'Pisces':
           console.log('Pisces was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`jess.mp3`;
           // speakers.play();
           zImage.src = 'images/jess.png';
           zZodiac.innerHTML = "You are Jess!";
@@ -102,7 +102,7 @@ function userPicked(buttonName) {
       break;
       case 'Aries':
           console.log('Aries was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`schmidt.mp3`;
           // speakers.play();
           zImage.src = 'images/schmidt.png';
           zZodiac.innerHTML = "You are Schmidt!";
@@ -111,7 +111,7 @@ function userPicked(buttonName) {
       break;
       case 'Taurus':
           console.log('Taurus was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`cece.mp3`;
           // speakers.play();
           zImage.src = 'images/cece.png';
           zZodiac.innerHTML = "You are Cece!";
@@ -120,8 +120,8 @@ function userPicked(buttonName) {
       break;
       case 'Gemini':
           console.log('Gemini was clicked');
-          // speakers.src =`sounds/paul.mp3`;
-          // speakers.play();
+          speakers.src =`winston.mp3`;
+          speakers.play();
           zImage.src = 'images/winston.png';
           zZodiac.innerHTML = "You are Winston!";
           zDescription.innerHTML = "As a Gemini you can talk your way out of anything. Your wit and charm wins people over and you do not struggle to make friends. When Winston was getting readjusted to the U.S. after being overseas, he managed to talk his friends into letting him have the biggest room in the loft. Winston’s great with words and learned how to use his mind to his benefit.";
@@ -129,7 +129,7 @@ function userPicked(buttonName) {
       break;
       case 'Cancer':
           console.log('Cancer was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`sam.mp3`;
           // speakers.play();
           zImage.src = 'images/sam.png';
           zZodiac.innerHTML = "You are Sam!";
@@ -138,8 +138,8 @@ function userPicked(buttonName) {
       break;
       case 'Leo':
           console.log('Leo was clicked');
-          // speakers.src =`sounds/paul.mp3`;
-          // speakers.play();
+          //speakers.src =`ferguson.mp3`;
+          //speakers.play();
           zImage.src = 'images/ferguson.png';
           zZodiac.innerHTML = "You are Ferguson!";
           zDescription.innerHTML = "As the feline of the zodiac, your personality is bold and unapologetic. You capture the attention of everyone you meet, like Ferguson. You shine your bright light on everyone you come in contact with, and your warmth is infectious. Honoring your heart is important and you are happiest when you do things your own way.";
@@ -147,8 +147,8 @@ function userPicked(buttonName) {
       break;
       case 'Virgo':
           console.log('Virgo was clicked');
-          // speakers.src =`sounds/paul.mp3`;
-          // speakers.play();
+          speakers.src =`nick.mp3`;
+          speakers.play();
           zImage.src = 'images/nick.png';
           zZodiac.innerHTML = "You are Nick!";
           zDescription.innerHTML = " Nick loves to help his friends solve problems (when he feels like it) and will often put his own problems on hold to be there for the people he cares about. As a Virgo you have a good head on your shoulders, and can offer a voice of reason in any situation. Although you can be hard on yourself, you soften when seeing the people you care about in difficult situations.";
@@ -156,7 +156,7 @@ function userPicked(buttonName) {
       break;
       case 'Libra':
           console.log('Libra was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`reagan.mp3`;
           // speakers.play();
           zImage.src = 'images/reagan.png';
           zZodiac.innerHTML = "You are Reagan!";
@@ -165,7 +165,7 @@ function userPicked(buttonName) {
       break;
       case 'Scorpio':
           console.log('Scorpio was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`aly.mp3`;
           // speakers.play();
           zImage.src = 'images/aly.png';
           zZodiac.innerHTML = "You are Aly!";
@@ -174,7 +174,7 @@ function userPicked(buttonName) {
       break;
       case 'Sagittarius':
           console.log('Sagittarius was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`abby.mp3`;
           // speakers.play();
           zImage.src = 'images/abby.png';
           zZodiac.innerHTML = "You are Abby!";
@@ -183,7 +183,7 @@ function userPicked(buttonName) {
       break;
       case 'Capricorn':
           console.log('Capricorn was clicked');
-          // speakers.src =`sounds/paul.mp3`;
+          // speakers.src =`coach.mp3`;
           // speakers.play();
           zImage.src = 'images/coach.png';
           zZodiac.innerHTML = "You are Coach!";
