@@ -83,7 +83,7 @@ function userPicked(buttonName) {
     switch (buttonName) {
       case 'Aquarius':
           console.log('Aquarius was clicked');
-          speakers.src =`paul.mp3`;
+          speakers.src =`sounds/paul.mp3`;
           speakers.play();
           zImage.src = 'images/paul.png';
           zZodiac.innerHTML = "You are Paul!";
@@ -93,7 +93,7 @@ function userPicked(buttonName) {
       break;
       case 'Pisces':
           console.log('Pisces was clicked');
-          speakers.src =`jess.mp3`;
+          speakers.src =`sounds/jess.mp3`;
           speakers.play();
           zImage.src = 'images/jess.png';
           zZodiac.innerHTML = "You are Jess!";
@@ -102,7 +102,7 @@ function userPicked(buttonName) {
       break;
       case 'Aries':
           console.log('Aries was clicked');
-          speakers.src =`schmidt.mp3`;
+          speakers.src =`sounds/schmidt.mp3`;
           speakers.play();
           zImage.src = 'images/schmidt.png';
           zZodiac.innerHTML = "You are Schmidt!";
@@ -111,7 +111,7 @@ function userPicked(buttonName) {
       break;
       case 'Taurus':
           console.log('Taurus was clicked');
-          speakers.src =`cece.mp3`;
+          speakers.src =`sounds/cece.mp3`;
           speakers.play();
           zImage.src = 'images/cece.png';
           zZodiac.innerHTML = "You are Cece!";
@@ -120,7 +120,7 @@ function userPicked(buttonName) {
       break;
       case 'Gemini':
           console.log('Gemini was clicked');
-          speakers.src =`winston.mp3`;
+          speakers.src =`sounds/winston.mp3`;
           speakers.play();
           zImage.src = 'images/winston.png';
           zZodiac.innerHTML = "You are Winston!";
@@ -129,7 +129,7 @@ function userPicked(buttonName) {
       break;
       case 'Cancer':
           console.log('Cancer was clicked');
-          speakers.src =`sam.mp3`;
+          speakers.src =`sounds/sam.mp3`;
           speakers.play();
           zImage.src = 'images/sam.png';
           zZodiac.innerHTML = "You are Sam!";
@@ -138,7 +138,7 @@ function userPicked(buttonName) {
       break;
       case 'Leo':
           console.log('Leo was clicked');
-          speakers.src =`ferguson.mp3`;
+          speakers.src =`sounds/ferguson.mp3`;
           speakers.play();
           zImage.src = 'images/ferguson.png';
           zZodiac.innerHTML = "You are Ferguson!";
@@ -147,7 +147,7 @@ function userPicked(buttonName) {
       break;
       case 'Virgo':
           console.log('Virgo was clicked');
-          speakers.src =`nick.mp3`;
+          speakers.src =`sounds/nick.mp3`;
           speakers.play();
           zImage.src = 'images/nick.png';
           zZodiac.innerHTML = "You are Nick!";
@@ -156,7 +156,7 @@ function userPicked(buttonName) {
       break;
       case 'Libra':
           console.log('Libra was clicked');
-          speakers.src =`reagan.mp3`;
+          speakers.src =`sounds/reagan.mp3`;
           speakers.play();
           zImage.src = 'images/reagan.png';
           zZodiac.innerHTML = "You are Reagan!";
@@ -165,7 +165,7 @@ function userPicked(buttonName) {
       break;
       case 'Scorpio':
           console.log('Scorpio was clicked');
-          speakers.src =`aly.mp3`;
+          speakers.src =`sounds/aly.mp3`;
           speakers.play();
           zImage.src = 'images/aly.png';
           zZodiac.innerHTML = "You are Aly!";
@@ -174,7 +174,7 @@ function userPicked(buttonName) {
       break;
       case 'Sagittarius':
           console.log('Sagittarius was clicked');
-          speakers.src =`abby.mp3`;
+          speakers.src =`sounds/abby.mp3`;
           speakers.play();
           zImage.src = 'images/abby.png';
           zZodiac.innerHTML = "You are Abby!";
@@ -183,7 +183,7 @@ function userPicked(buttonName) {
       break;
       case 'Capricorn':
           console.log('Capricorn was clicked');
-          speakers.src =`coach.mp3`;
+          speakers.src =`sounds/coach.mp3`;
           speakers.play();
           zImage.src = 'images/coach.png';
           zZodiac.innerHTML = "You are Coach!";
