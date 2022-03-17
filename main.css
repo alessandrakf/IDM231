@@ -180,7 +180,9 @@ input[type=date]:hover {
 
 .modal-body {
 	background-color: #fff;
-	border: none;
+	border: solid;
+    border-color: #016BD0;
+    border-width: thick;
     border-radius: 50px;
 
 	height: 50vh;
@@ -254,8 +256,10 @@ input[type=date]:hover {
 }
 
 .modal-body-help {
-	background-color: #fff;
-	border: none;
+	background-color: #FFFAD0;
+	border: solid;
+    border-color: #016BD0;
+    border-width: thick;
     border-radius: 50px;
 
 	height: 40vh;
@@ -318,6 +322,7 @@ input[type=date]:hover {
 
 #zDescription-help {
     font-size: 1.5rem;
+    line-height: 150%;
 }
 
 /* ANIMATIONS */
@@ -417,6 +422,48 @@ input[type=date]:hover {
   }
 }
 
+@keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes swing-top-fwd {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+    100% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+
+  @keyframes slide-rotate-hor-top {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0deg);
+              transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-150px) rotateX(-90deg);
+              transform: translateY(-150px) rotateX(-90deg);
+    }
+  }
+  
+
 #Aquarius:hover {
     animation-name: bounce-1;
     animation-duration: 2s;
@@ -458,17 +505,17 @@ input[type=date]:hover {
 }
 
 #Libra:hover {
-    animation-name: flash;
+    animation-name: rotate-scale-up;
     animation-duration: 2s;
 }
 
 #Scorpio:hover {
-    animation-name: flash;
+    animation-name: swing-top-fwd;
     animation-duration: 2s;
 }
 
 #Sagittarius:hover {
-    animation-name: flash;
+    animation-name: slide-rotate-hor-top;
     animation-duration: 2s;
 }
 

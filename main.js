@@ -93,8 +93,8 @@ function userPicked(buttonName) {
       break;
       case 'Pisces':
           console.log('Pisces was clicked');
-          // speakers.src =`jess.mp3`;
-          // speakers.play();
+          speakers.src =`jess.mp3`;
+          speakers.play();
           zImage.src = 'images/jess.png';
           zZodiac.innerHTML = "You are Jess!";
           zDescription.innerHTML = "As the sensitive and intuitive sign, your characteristics align perfectly with Jess. She is kindhearted and wants the best for everyone around her, even if she at times is taken for granted. Your sole mission in life is to help those who are less fortunate and your warmhearted nature makes you stand out. Your ability to place yourself in anyone’s shoes is one of the things people cherish the most about you.";
@@ -102,8 +102,8 @@ function userPicked(buttonName) {
       break;
       case 'Aries':
           console.log('Aries was clicked');
-          // speakers.src =`schmidt.mp3`;
-          // speakers.play();
+          speakers.src =`schmidt.mp3`;
+          speakers.play();
           zImage.src = 'images/schmidt.png';
           zZodiac.innerHTML = "You are Schmidt!";
           zDescription.innerHTML = "Schmidt’s assertive and outgoing nature aligns him perfectly with the Aries sign. Like Schmidt, you inspire those around you with your enthusiasm and energy. You love your friends and family deeply and will do whatever it takes to ensure the well-being of your crew.";
@@ -111,8 +111,8 @@ function userPicked(buttonName) {
       break;
       case 'Taurus':
           console.log('Taurus was clicked');
-          // speakers.src =`cece.mp3`;
-          // speakers.play();
+          speakers.src =`cece.mp3`;
+          speakers.play();
           zImage.src = 'images/cece.png';
           zZodiac.innerHTML = "You are Cece!";
           zDescription.innerHTML = "Cece is trustworthy and loyal making her the best friend anyone could ask for. She is the ost reliable character out of the gang. You prefer a calm environment but you are sure to stick up for yourself or your friends when necessary. Your creative side makes it seem like you are not quick to anger, but you know when to put your foot down.";
@@ -129,8 +129,8 @@ function userPicked(buttonName) {
       break;
       case 'Cancer':
           console.log('Cancer was clicked');
-          // speakers.src =`sam.mp3`;
-          // speakers.play();
+          speakers.src =`sam.mp3`;
+          speakers.play();
           zImage.src = 'images/sam.png';
           zZodiac.innerHTML = "You are Sam!";
           zDescription.innerHTML = "As the nurturing caregiver of the zodiac, you are sometimes more sensitive than you like to let on. Like Sam, you protect your heart, especially if it has been broken before. Like Cancer’s sign, the crab, your soft side is hidden under your tough shell and you prefer to open up to others cautiously.";
@@ -138,8 +138,8 @@ function userPicked(buttonName) {
       break;
       case 'Leo':
           console.log('Leo was clicked');
-          //speakers.src =`ferguson.mp3`;
-          //speakers.play();
+          speakers.src =`ferguson.mp3`;
+          speakers.play();
           zImage.src = 'images/ferguson.png';
           zZodiac.innerHTML = "You are Ferguson!";
           zDescription.innerHTML = "As the feline of the zodiac, your personality is bold and unapologetic. You capture the attention of everyone you meet, like Ferguson. You shine your bright light on everyone you come in contact with, and your warmth is infectious. Honoring your heart is important and you are happiest when you do things your own way.";
@@ -156,8 +156,8 @@ function userPicked(buttonName) {
       break;
       case 'Libra':
           console.log('Libra was clicked');
-          // speakers.src =`reagan.mp3`;
-          // speakers.play();
+          speakers.src =`reagan.mp3`;
+          speakers.play();
           zImage.src = 'images/reagan.png';
           zZodiac.innerHTML = "You are Reagan!";
           zDescription.innerHTML = "Social and relatable, you prioritize your social life and relationships over all else. Your connections are a top priority in your life, just like Reagan’s. When you allow yourself to open up to love, you flourish and build incredible bonds with everyone around you.";
@@ -165,8 +165,8 @@ function userPicked(buttonName) {
       break;
       case 'Scorpio':
           console.log('Scorpio was clicked');
-          // speakers.src =`aly.mp3`;
-          // speakers.play();
+          speakers.src =`aly.mp3`;
+          speakers.play();
           zImage.src = 'images/aly.png';
           zZodiac.innerHTML = "You are Aly!";
           zDescription.innerHTML = "Determined to succeed, you don’t let anyone distract you from your main objective. Like Aly, you keep your cards close to your chest and it can take some time for you to open up. Once you’ve tested the water, you will share your heard as long as you feel it’s safe enough to do so. You like to use your ambitions nature to figure things out and you are not afraid to get your hands dirty, making you braver than the rest.";
@@ -174,8 +174,8 @@ function userPicked(buttonName) {
       break;
       case 'Sagittarius':
           console.log('Sagittarius was clicked');
-          // speakers.src =`abby.mp3`;
-          // speakers.play();
+          speakers.src =`abby.mp3`;
+          speakers.play();
           zImage.src = 'images/abby.png';
           zZodiac.innerHTML = "You are Abby!";
           zDescription.innerHTML = "You are someone who likes to journey through life with no destination, because the journey is more exciting after all. Like Abby, you enjoy going with the flow and your optimistic attitude shields you from disappointment when plans change. You have an adaptable nature that keeps you on the go, and you get bored when feeling limited. This freedom-loving nature makes you a wonderful companion and you have so much to teach and share with others.";
@@ -183,8 +183,8 @@ function userPicked(buttonName) {
       break;
       case 'Capricorn':
           console.log('Capricorn was clicked');
-          // speakers.src =`coach.mp3`;
-          // speakers.play();
+          speakers.src =`coach.mp3`;
+          speakers.play();
           zImage.src = 'images/coach.png';
           zZodiac.innerHTML = "You are Coach!";
           zDescription.innerHTML = "As the firm roommate, Coach prioritizes work and resourcefulness over everything. Like you, he is motivated by success and he is at his best when working towards a goal. Since you are always striving for greatness, it is important to remember to let loose and have some fun every once in a while. Work hard, play hard.";
